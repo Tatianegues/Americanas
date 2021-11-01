@@ -1,0 +1,71 @@
+[
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2021-11-01T13:54:21.863Z",
+        "line": 8,
+        "name": "Validar produto retornado",
+        "description": "",
+        "id": "realizar-busca;validar-produto-retornado",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 45542604800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "que eu esteja no site \"https://www.americanas.com.br\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.americanas.com.br\"",
+                  "offset": 22
+                }
+              ],
+              "location": "steps.AmericanasBuscaResultado.que_eu_esteja_no_site(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 43838507400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "realizar pesquisa por produto",
+            "match": {
+              "location": "steps.AmericanasBuscaResultado.realizar_pesquisa_por_produto()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 8738499800,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "verifico produto retornado",
+            "match": {
+              "location": "steps.AmericanasBuscaResultado.verifico_produto_retornado()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@buscaTelefone"
+          }
+        ]
+      }
+    ],
+    "name": "Realizar busca",
+    "description": "  Como QA quero acessar o site para realizar busca",
+    "id": "realizar-busca",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/americanas.busca.resultado.feature",
+    "tags": []
+  }
+]
